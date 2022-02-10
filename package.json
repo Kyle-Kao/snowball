@@ -1,0 +1,23 @@
+{
+  "name": "snowball",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass ./style.scss ./style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kyle-Kao/snowball.git"
+  },
+  "author": "kyle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kyle-Kao/snowball/issues"
+  },
+  "homepage": "https://github.com/Kyle-Kao/snowball#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

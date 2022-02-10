@@ -1,0 +1,213 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 10px;
+  box-sizing: border-box; }
+
+#snow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  #snow .snowCraftGame {
+    border: 1px solid #afc8e6;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px 0 rgba(0, 0, 0, 0.2);
+    padding: 66px 50px 40px;
+    background-color: #ffffff;
+    position: relative;
+    text-align: center; }
+    #snow .snowCraftGame .whichLevel {
+      position: absolute;
+      padding: 10px 40px;
+      background-image: linear-gradient(to top, #3264b4, #193269);
+      color: #ffffff;
+      font-size: 20px;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px; }
+    #snow .snowCraftGame .canvas-outside {
+      padding: 10px;
+      border-radius: 10px;
+      border: solid 2px #dae6f2;
+      z-index: -1; }
+      #snow .snowCraftGame .canvas-outside #canvas {
+        background: url(./img/ground.jpg) no-repeat center/cover; }
+
+.Startbg {
+  position: fixed;
+  width: calc(100% - 11.5rem);
+  height: calc(100% - 17rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  left: 50%;
+  top: 76px;
+  transform: translateX(-50%);
+  z-index: 1000; }
+  .Startbg-level {
+    font-size: 48px;
+    color: #3264b4;
+    position: relative;
+    align-self: stretch;
+    z-index: 0; }
+    .Startbg-level-2 {
+      position: absolute;
+      font-size: 48px;
+      color: #ffffff;
+      -webkit-text-stroke: 5px #ffffff;
+      z-index: -1;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%); }
+  .Startbg-num {
+    font-size: 56px;
+    color: #ffffff;
+    background-color: #e65a55;
+    border-radius: 50%;
+    width: 7rem;
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto; }
+  .Startbg-txt {
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 500;
+    display: none;
+    cursor: pointer;
+    margin: 20px auto;
+    background-color: #e65a55;
+    padding: 15px 40px;
+    border-radius: 30px;
+    border: 1px solid #ffffff;
+    position: relative;
+    z-index: 1; }
+    .Startbg-txt:before {
+      position: absolute;
+      content: '';
+      background-color: rgba(230, 90, 85, 0.5);
+      width: calc(100% + 10px);
+      height: calc(100% + 10px);
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 30px;
+      z-index: -1; }
+  .Startbg-des {
+    color: #ffffff;
+    font-size: 18px;
+    margin-top: 15px; }
+  @media (max-width: 750px) {
+    .Startbg {
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      transform: initial; } }
+
+.notice {
+  font-size: 15px;
+  color: #333333;
+  margin-top: 20px; }
+  @media (max-width: 750px) {
+    .notice {
+      margin-top: 1vw;
+      font-size: 2vw; } }
+
+.challengeBg {
+  position: absolute;
+  width: calc(100% - 11.5rem);
+  height: calc(100% - 17rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  left: 50%;
+  top: 76px;
+  transform: translateX(-50%);
+  display: none; }
+  .challengeBg.full {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transform: initial;
+    flex-direction: row; }
+    .challengeBg.full .flex-box .challengeBg-level {
+      font-size: 3.6rem; }
+      .challengeBg.full .flex-box .challengeBg-level-2 {
+        font-size: 3.6rem; }
+    .challengeBg.full .flex-box .challengeBg-btn {
+      padding: 1.2rem 3rem; }
+  .challengeBg .flex-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    .challengeBg .flex-box .challengeBg-level {
+      font-size: 48px;
+      color: #3264b4;
+      position: relative;
+      align-self: stretch;
+      z-index: 0; }
+      .challengeBg .flex-box .challengeBg-level-2 {
+        position: absolute;
+        font-size: 48px;
+        color: #ffffff;
+        -webkit-text-stroke: 5px #ffffff;
+        z-index: -1;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%; }
+    .challengeBg .flex-box .challengeBg-btn {
+      font-size: 2rem;
+      color: #ffffff;
+      background-color: #e65a55;
+      border-radius: 3rem;
+      border: 1px solid #ffffff;
+      padding: 1.5rem 4rem;
+      margin-top: 3rem;
+      cursor: pointer;
+      position: relative;
+      z-index: 1; }
+      .challengeBg .flex-box .challengeBg-btn:before {
+        position: absolute;
+        content: '';
+        background-color: rgba(230, 90, 85, 0.5);
+        width: calc(100% + 10px);
+        height: calc(100% + 10px);
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 30px;
+        z-index: -1; }
+  .challengeBg .img {
+    background: url(./img/illus_success.png) no-repeat center/contain;
+    width: 27.6rem;
+    height: 27.6rem; }
+  .challengeBg.false {
+    display: flex; }
+    .challengeBg.false .challengeBg-btn {
+      background-color: #3264b4; }
+      .challengeBg.false .challengeBg-btn:before {
+        display: none; }
+    .challengeBg.false .img {
+      background: url(./img/illus_fail.png) no-repeat center/contain;
+      width: 27.6rem;
+      height: 27.6rem; }
+
+.dn {
+  display: none !important; }
+
+.df {
+  display: flex !important; }
